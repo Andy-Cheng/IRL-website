@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css?family=Bitter:700|Noto+Sans+TC&display=swap');
+body{
+	font-size: 18px;
+	background: #fff;  /* fallback for old browsers */
+}
+a { 
+	color: initial; 
+	text-decoration: none;
+} 
+a:hover{
+	text-decoration: none;
+	color: initial;
+}
+td{
+	background-color: white;
+}
+.main-container{
+	margin: 0px 8% 0px 8%;
+	/* text-align: center; */
+}
+
+.first-container{
+	background-image: url(../img/home2.png);
+	padding: 2% 7% 2% 7%;
+	/*
+	background: #1c92d2;  /* fallback for old browsers */
+	/*background: -webkit-linear-gradient(to right, #f2fcfe, #1c92d2);  /* Chrome 10-25, Safari 5.1-6 */
+	/*background: linear-gradient(to right, #f2fcfe, #1c92d2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	color: #444;
+	background-size:100% 100%;
+	font-family: 'bitter';
+}
+.first-container img{
+	float: left;
+	width: 40px;
+}
+.first-container h5{
+	/*line-height: inherit;*/
+	margin-left: 50px;
+	font-family: arial;
+}
+.breadcrumb{
+	font-size: 0.8rem;
+}
+
+.navbar{
+	background-color: #1273DE;
+	padding-left: 7%;
+}
+
+.navbar-brand{
+	display: none;
+}
+.navbar-items{
+	float: right;
+	color: #fff;
+}
+.nav-item{
+	font-family: 'Microsoft YaHei', sans-serif;
+	font-size: 1.3rem;
+	transition: .3s;
+	margin-left: 3px;
+	margin-right: 3px;
+	border: 1.5px solid transparent;
+}
+.nav-item:hover{
+	transition: .3s;
+	border: 1.5px solid #FFF;
+}
+
+.index-container{
+	min-height: 70vh;
+	background-color: #f3f3f3;
+	padding: 3% 5% 5% 5%;
+}
+
+.backgroundcircle{
+	background-color: #1273DE;
+	border-radius: 100px;
+	width: 200px;
+	height: 200px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+}
+.backgroundcircle img{
+	width: 150px;
+}
+.backgroundcircle:hover{
+	transform: scale(1.03);
+}
+
+.words p{
+	margin: 0;
+	padding: 10px 0px 0px 0px;
+	font-weight: 700;
+}
+
+.footer-container{
+	padding: 2%;
+	align-items: center;
+	background-color: #555;
+	text-align: center;
+}
+.footer{
+	color: #f3f3f3;
+}
+
+.advisor-container{
+	display: flex;
+	justify-content: center;
+	color: #555;
+	margin: 100px 0px 100px 0px
+}
+
+.prof-name p{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 2rem;
+	font-weight: 600;
+}
+.prof-name ul{
+	font-size: 1.2rem;
+	list-style-type: none;
+}
+.bio-container{
+	display: flex;
+	justify-content: center;
+	padding-left: 30px;
+	padding-right: 30px;
+	text-align: justify;
+}
+
+.buttons{
+	display: flex;
+	justify-content: space-around;
+}
+
+/* .button-common{
+	position: absolute;
+	border: none;
+	transition: 0.3s;
+	background-color:rgba(0, 0, 0, 0);
+	color: white;
+
+	
+}
+
+.button-common:hover{
+	transition: 0.4s;
+	opacity: 0.5;
+	font-size: 1.5em;
+}
+
+.button-common:active, 
+.button-common:focus 
+{
+	outline: none;
+ } */
+
+
+.button-normal{
+	position: relative;
+	border: none;
+	transition: 0.3s;
+	background-color:rgba(0, 0, 0, 0);
+	color: black;
+
+	
+}
+
+.button-normal:hover{
+	transition: 0.4s;
+	opacity: 0.5;
+	font-size: 1.5em;
+}
+
+.button-normal:active, 
+.button-normal:focus 
+{
+	outline: none;
+ }
+
+
+ .button-normal-small{
+	position: relative;
+	border: none;
+	transition: 1s;
+	background-color:rgba(0, 0, 0, 0);
+	color: black;
+	font-size: 14px;
+
+	
+}
+
+.button-normal-small:hover{
+	transition: 0.4s;
+	opacity: 0.5;
+}
+
+.button-normal-small:active, 
+.button-normal-small:focus 
+{
+	outline: none;
+
+ }
+
+
+.tst{
+	display: flex;
+	justify-content: center;
+}
+
+.yahei{
+	font-family: 'Microsoft YaHei';
+}
+
+.newstitle{
+	transition: .3s;
+	color: #0E90D2;
+}
+.newstitle:hover{
+	text-decoration: underline;
+}
+.pubulication-table thead{
+	background-color: azure;
+}
+.pubulication-table td{
+	font-size: 0.9rem;
+}
+
+.leftpart{
+	display: block;
+	max-width: 25%;
+	float: left;
+	height: 100% ;
+	padding-top: 10px;
+	vertical-align:middle;
+	box-sizing: border-box;
+}
+.leftpart img{
+	width: 100%;
+}
+.rightpart{
+	display: block;
+	padding-left: 20px;
+	width: 75%;
+	float: right;
+}
+
+.my_link:hover{
+	text-decoration: underline;
+	font-weight: bold;
+}
+.dropdown:hover>.dropdown-menu{
+		display: block;
+}
+.dropdown:active>.dropdown-menu{
+	display: block;
+}
+
+/* Editor */
+.editor-divider{
+	border-top: 1px dashed #444;
+	
+}
+
+.editor-section{
+	border-top: 1px dashed #444;
+	margin: 6px;
+
+}
+
+@media screen and (max-width: 480px) {
+  .first-container{
+		display: none;
+	}
+	.main-container{
+		margin:0px;
+	}
+	.navbar-brand{
+		display: initial;
+	}
+}
