@@ -4,6 +4,16 @@ import { AuthContext } from '../util/AuthContext';
 
 
 class Navbar extends Component {
+  constructor(props){
+    super(props);
+    this.state = {toggle: "collapse"};
+    this.toggle = this.toggle.bind(this);
+  }
+
+  toggle = () => {
+    this.setState((prevState)=> prevState.toggle === "" ? {toggle: "collapse"} : {toggle: ""} );
+  }
+  
 
   render() {
     return (
@@ -16,11 +26,11 @@ class Navbar extends Component {
         </div>
         <div className="navbar-container">
             <nav id="navbar" className="navbar navbar-expand-xl navbar-dark fixed" style={{transition: ".5s"}}>
-                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample06">
+                <button onClick={this.toggle} className="navbar-toggler"   >
                     <span className="navbar-toggler-icon"></span>
                 </button>   
                 <span className="navbar-brand" style={{color:'white'}}>Internet Research Lab</span>            
-                <div className="collapse navbar-collapse navbar-items" id="navbarsExample06">
+                <div className={`${this.state.toggle} navbar-collapse navbar-items`} >
                     <ul className="navbar-nav mr-auto">                       
                         <li className="nav-item active"> 
                           <NavLink onClick={this.close} className="nav-link" to="/about">關於我們</NavLink>

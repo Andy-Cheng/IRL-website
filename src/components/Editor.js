@@ -309,7 +309,7 @@ class Editor extends Component {
                 updatedSections[index] = { type: "ol", list: parseOlContent(section.content) };
             }
 
-            else if(section.type == "image"){
+            else if(section.type === "image"){
                 if(section.fileToImgur){
                     // Upload to imgur
                     console.log("fileToImgur", section.fileToImgur)
@@ -465,11 +465,11 @@ class Editor extends Component {
             if (newSec.type === "text") {
                 newSec.content = words;
             }
-            else if (newSec.type == "header") {
+            else if (newSec.type === "header") {
                 newSec.header = words;
 
             }
-            else if (newSec.type == "paragraph") {
+            else if (newSec.type === "paragraph") {
                 if (option.isHeader) {
                     newSec.header = words;
                 }
@@ -478,12 +478,12 @@ class Editor extends Component {
                 }
 
             }
-            else if (newSec.type == "ol") {
+            else if (newSec.type === "ol") {
                 newSec.content = words;
 
 
             }
-            else if (newSec.type == "ul") {
+            else if (newSec.type === "ul") {
                 newSec.content = words;
 
             }
@@ -499,7 +499,6 @@ class Editor extends Component {
             <div className="container-fluid text-justify">
                 {
                     this.state.sections.map((section, index) => {
-                        console.log(`render: ${section.type}`)
                         switch (section.type) {
                             case "header":
                                 return <EditHeader
@@ -553,7 +552,7 @@ class Editor extends Component {
 
                                 />
                             default:
-
+                                return null;
 
                         }
                     })
